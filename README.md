@@ -23,10 +23,84 @@ The Address Book App is designed to store and display contact details such as a 
 8.Select the suitable available device to display the output. 22. Now run the application to see the output. 
 
 ## PROGRAM:
+MAINACTIVITY
+
+package com.example.addressbook;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+public class MainActivity extends AppCompatActivity {
+    EditText name, phone;
+    Button save;
+    TextView output;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        name = findViewById(R.id.name);
+        phone = findViewById(R.id.phone);
+        save = findViewById(R.id.save);
+        output = findViewById(R.id.output);
+        save.setOnClickListener(v -> {
+            String contact = "Name: " + name.getText().toString() + "\nPhone: " + phone.getText().toString();
+            output.setText(contact);
+
+
+        });
+
+
+    }
+}
+
+
+MAIN ACTIVITY XML
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+    <EditText
+        android:id="@+id/name"
+        android:hint="Enter Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+        android:id="@+id/phone"
+        android:hint="Enter Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+
+
+    <Button
+        android:id="@+id/save"
+        android:text="Save Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/output"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+
 
 ## OUTPUT:
 
 
+<img width="1920" height="1080" alt="Screenshot 2025-09-23 153041" src="https://github.com/user-attachments/assets/85e58c42-8b8d-4be6-823d-5bc8fd597bc5" />
 
 
 ## RESULT:
