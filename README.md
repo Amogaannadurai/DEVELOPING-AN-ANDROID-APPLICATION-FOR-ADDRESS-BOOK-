@@ -98,9 +98,9 @@ MAIN ACTIVITY XML
 
 
 ## OUTPUT:
+<img width="1920" height="1080" alt="Screenshot 2025-09-25 110554" src="https://github.com/user-attachments/assets/22f7d914-e2af-442d-9da0-29adac6cec17" />
 
 
-<img width="1920" height="1080" alt="Screenshot 2025-09-23 153041" src="https://github.com/user-attachments/assets/85e58c42-8b8d-4be6-823d-5bc8fd597bc5" />
 
 
 ## RESULT:
